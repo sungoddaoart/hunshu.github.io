@@ -1,0 +1,120 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: '微软雅黑', sans-serif;
+    background-color: #d70000;
+    /* 中国红背景色 */
+    color: #fff;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #b30000;
+    /* 深红色背景 */
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 5px solid #ffcc00;
+    /* 金色边框 */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    /* 金色文字 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-style: italic;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    margin-bottom: 20px;
+}
+
+.couple-info,
+.wedding-vow,
+.blessings {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-top: 20px;
+    padding: 10px;
+    border-left: 4px solid #ffcc00;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-style: italic;
+}
+
+footer {
+    background-color: #b30000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    border-top: 5px solid #ffcc00;
+}
+
+
+/* 添加装饰性元素 */
+
+.wedding-vow::before {
+    content: "💍";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blessings::before {
+    content: "🎉";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header h1,
+.couple-info,
+.wedding-vow,
+.blessings {
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
