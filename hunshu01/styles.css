@@ -87,6 +87,62 @@ footer {
 
 /* 添加装饰性元素 */
 
+.header-content::before {
+    content: "👑👑";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info::before {
+    content: "🌹🌹";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info1::before {
+    content: "🎊";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info2::before {
+    content: "💎💎";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info3::before {
+    content: "🥂";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info4::before {
+    content: "🧧";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info5::before {
+    content: "🤼‍♀️";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.couple-info6::before {
+    content: "🎆";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
 .wedding-vow::before {
     content: "💍";
     font-size: 2rem;
@@ -96,6 +152,13 @@ footer {
 
 .blessings::before {
     content: "🎉";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.commitment-timer::before {
+    content: "⌚️";
     font-size: 2rem;
     display: block;
     margin-bottom: 10px;
