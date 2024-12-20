@@ -46,4 +46,30 @@ function updateCommitmentTime() {
 // 每秒更新一次计时器
 setInterval(updateCommitmentTime, 1000);
 
-// ... existing code ...
+// edit_1: 弹出图片
+window.onload = function() {
+    const imgSrc = document.body.getAttribute('data-image'); // 获取图片名称
+
+    const img = document.createElement('img');
+    img.src = imgSrc; // 使用获取的图片名称
+    img.alt = '张欣宇';
+    img.className = 'popup-image'; // 添加类名以应用样式
+
+    const popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '0';
+    popup.style.left = '0';
+    popup.style.width = '100%';
+    popup.style.height = '100%';
+    popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    popup.style.display = 'flex';
+    popup.style.alignItems = 'center';
+    popup.style.justifyContent = 'center';
+    popup.style.zIndex = '1000';
+    popup.onclick = function() {
+        document.body.removeChild(popup);
+    };
+
+    popup.appendChild(img);
+    document.body.appendChild(popup);
+};
